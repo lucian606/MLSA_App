@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MLSA.Views.LoginPage">
+    <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+        <BoxView HeightRequest="10"/>
+        <Image HorizontalOptions="Center" WidthRequest="300" Source="{local: ImageResource MLSA.Pictures.logo.jpg}" />
+        <Frame>
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Label x:Name="Lbl_Username" Text="Username" FontSize="20"/>
+                <Entry x:Name="Entry_Username" Placeholder="Username" />
+                <Label x:Name="Lbl_Password" Text="Password" FontSize="20"/>
+                <Entry x:Name="Entry_Password" IsPassword="true" Placeholder="Password" />
+            </StackLayout>
+        </Frame>
+        <Button x:Name="Btn_Signin" Text="Sign in" Clicked="SignInProcedure" />
+    </StackLayout>
+</ContentPage>
